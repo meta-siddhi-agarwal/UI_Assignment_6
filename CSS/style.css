@@ -1,50 +1,28 @@
+* {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 body {
-    background-color: #e8edf1;
-}
-.sidebar{
-    background-color: #f8f9fa;
-    padding: 20px;
-    width: 250px; 
-    position: fixed;
-    height: 100vh; /* Full height */
-    overflow-y: auto; /* Enables scrolling */   
+  width: 100vw;
+  height: 100vh;
 }
 
-.title {
-    margin-left: 40px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-.menu-title {
-    color: grey;
-    margin-top: 20px;
-}
-.nav-link {
-    color: black;
-    margin-top: 10px;
-}
-.badges {
-    float: right;
-    border-radius: 40px;
-}
-.arrow {
-    float: right;
-    cursor: pointer;
-    font-weight:600;
-}
-#subListAdvanced, #subListUI, #subListCharts,#subListIcons,#subListTables,#subListPages {
-    background-color:#f8f9fa; /* Match sidebar color */
+input::placeholder {
+  color: white ;
 }
 
-#subListAdvanced .list-group-item,#subListUI .list-group-item,#subListCharts .list-group-item,#subListIcons .list-group-item,#subListTables .list-group-item,#subListPages .list-group-item{
-    background-color: #f8f9fa; /* Match sidebar */
-    border: none; /* Remove borders */
-    color: grey /* Ensure text remains readable */
+
+.bg-primary{
+    background-color: #5b6be8 !important;
 }
 
-.navbar-custom {
-    margin-left: 250px;
-    background-color: rgb(11, 135, 237);
-    height: 60px;
+a:hover{
+    text-decoration: none;
+
+}
+
+.User-table::-webkit-scrollbar-button {
+    display: none;
 }
