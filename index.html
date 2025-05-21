@@ -1,174 +1,1324 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annex</title>
-    <link href="CSS/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-    <!---Sidebar---->
-    
-    <div class="position-fixed sidebar">
-        <h5 class="mb-4 title"><i class="mdi mdi-assistant"></i>ANNEX</h5>
-        
-        <!---Main List---->
-        <ul class="nav flex-column">
-            <li class="menu-title">
-              Main
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Dashboard <span class="badge text-bg-primary badges">7</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Advanced UI
-                <span class="arrow" data-bs-toggle="collapse" data-bs-target="#subListAdvanced">></span>
-              </a>
-              <div id="subListAdvanced" class="collapse">
-                <ul class="list-group ms-3">
-                    <li class="list-group-item">Higlight</li>
-                    <li class="list-group-item">Rating</li>
-                    <li class="list-group-item">Alertify</li>
-                    <li class="list-group-item">Range Slider</li>
-                </ul>
-            </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><img src="icons/calendar.png" alt="calendar icon" width="20px" style="margin-right: 10px;">Calendar</a>
-            </li>
-        </ul>
-        <!----Components List-->
-        <ul class="nav flex-column">
-            <li class="menu-title">
-              Components
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">UI Elements
-                <span class="arrow" data-bs-toggle="collapse" data-bs-target="#subListUI">></span>
-              </a>
-              <div id="subListUI" class="collapse">
-                <ul class="list-group ms-3">
-                    <li class="list-group-item">Buttons</li>
-                    <li class="list-group-item">Cards</li>
-                    <li class="list-group-item">Tabs & Accordions</li>
-                    <li class="list-group-item">Modals</li>
-                    <li class="list-group-item">Images</li>
-                    <li class="list-group-item">Alerts</li>
-                    <li class="list-group-item">Progress Bars</li>
-                    <li class="list-group-item">Dropdowns</li>
-                    <li class="list-group-item">Lightbox</li>
-                    <li class="list-group-item">Navs</li>
-                    <li class="list-group-item">Pagination</li>
-                    <li class="list-group-item">Popover & Tooltips</li>
-                    <li class="list-group-item">Badge</li>
-                    <li class="list-group-item">Carousel</li>
-                    <li class="list-group-item">Video</li>
-                    <li class="list-group-item">Typography</li>
-                    <li class="list-group-item">Sweet-Alert</li>
-                    <li class="list-group-item">Grid</li>
-                </ul>
-            </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Forms<span class="badge text-bg-primary badges">8</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Charts
-                    <span class="arrow" data-bs-toggle="collapse" data-bs-target="#subListCharts">></span>
-                </a>
-                <div id="subListCharts" class="collapse">
-                    <ul class="list-group ms-3">
-                        <li class="list-group-item">Morris Chart</li>
-                        <li class="list-group-item">Chartist Chart</li>
-                        <li class="list-group-item">Chartjs Chart</li>
-                        <li class="list-group-item">Flot Chart</li>
-                        <li class="list-group-item">C3 Chart</li>
-                        <li class="list-group-item">Jquery Knob Chart</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Icons
-                    <span class="arrow" data-bs-toggle="collapse" data-bs-target="#subListIcons">></span>
-                </a>
-                <div id="subListIcons" class="collapse">
-                    <ul class="list-group ms-3">
-                        <li class="list-group-item">Material Design</li>
-                        <li class="list-group-item">Ion Icons</li>
-                        <li class="list-group-item">Font Awesome</li>
-                        <li class="list-group-item">Themify Icons</li>
-                        <li class="list-group-item">Dripicons</li>
-                        <li class="list-group-item">Typicons Icons</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tables
-                    <span class="arrow" data-bs-toggle="collapse" data-bs-target="#subListTables">></span>
-                </a>
-                <div id="subListTables" class="collapse">
-                    <ul class="list-group ms-3">
-                        <li class="list-group-item">Basic Tables</li>
-                        <li class="list-group-item">Data Table</li>
-                        <li class="list-group-item">Responsive Table</li>
-                        <li class="list-group-item">Editable Table</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-        <!---Extras List---->
-        <ul class="nav flex-column">
-            <li class="menu-title">
-              Extra
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Maps <span class="badge text-bg-primary badges">2</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pages
-                    <span class="arrow" data-bs-toggle="collapse" data-bs-target="#subListPages">></span>
-                </a>
-                <div id="subListPages" class="collapse">
-                    <ul class="list-group ms-3">
-                        <li class="list-group-item">Login</li>
-                        <li class="list-group-item">Register</li>
-                        <li class="list-group-item">Recover Password</li>
-                        <li class="list-group-item">Lock Screen</li>
-                        <li class="list-group-item">Blank Page</li>
-                        <li class="list-group-item">Error 404</li>
-                        <li class="list-group-item">Error 500</li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            </form>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <section class="w-100 h-100 d-flex">
+      <aside class="" style="height: 100vh; width: 20%">
+        <div
+          class="logo-div p-5 d-flex justify-content-center align-items-center"
+          style="height: 10%"
+        >
+          <img height="30" src="Assets/Logo.png" alt="" />
+        </div>
+        <div class="" style="overflow-y: scroll; height: 85%">
+          <div class="main">
+            <p class="text-secondary p-2 px-3">Main</p>
+            <ul class="list-unstyled">
+              <li
+                class="p-3 px-4 d-flex justify-content-between align-items-center"
+                style="background-color: rgb(238, 233, 250)"
+              >
+                <div class="d-flex align-items-center">
+                  <img height="20" src="Assets/Display.svg" alt="" />
+                  <p class="px-3" style="color: rgb(5, 83, 162)">Dashboard</p>
+                </div>
+                <div
+                  class="notify bg-primary d-flex justify-content-center align-items-center text-light"
+                  style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                >
+                  7
+                </div>
+              </li>
+              <li class="p-3 px-4 d-flex flex-column" style="cursor: pointer">
+                <a
+                  class="d-flex justify-content-between align-items-center"
+                  data-toggle="collapse"
+                  href="#advancedUi"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <div class="d-flex align-items-center">
+                    <img height="20" src="Assets/Data.svg" alt="" />
+                    <p class="px-3 text-secondary" style="">Advanced UI</p>
+                  </div>
+                  <div
+                    class="notify text-primary d-flex justify-content-center align-items-center font-weight-bold"
+                    style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                  >
+                    <img height="20" src="Assets/ArrowRight.svg" alt="" />
+                  </div>
+                </a>
+                <div class="collapse" id="advancedUi">
+                  <ul class="list-unstyled pl-5">
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Highlight</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Rating</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Alertify</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Range Slider</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li style="cursor: pointer" class="p-3 px-4 d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center">
+                    <img
+                      height="20"
+                      width="20"
+                      src="Assets/Calender.svg"
+                      alt=""
+                    />
+                    <p class="px-3 text-secondary" style="">Calender</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-      
-          <div class="d-flex align-items-center ms-auto">
-            <div class="me-4">English 🇺🇸</div>
-            <div class="me-3">
-              <i class="bi bi-envelope"></i> <span class="badge bg-danger">6</span>
-            </div>
-            <div class="me-3">
-              <i class="bi bi-bell"></i> <span class="badge bg-success">23</span>
-            </div>
-            <div class="me-3">
-              <img src="https://via.placeholder.com/30" class="rounded-circle" alt="User">
-            </div>
+          <div class="component">
+            <p class="text-secondary p-2 px-3">Components</p>
+            <ul class="list-unstyled">
+              <li class="p-3 px-4 d-flex flex-column" style="cursor: pointer">
+                <a
+                  class="d-flex justify-content-between align-items-center"
+                  data-toggle="collapse"
+                  href="#uiElement"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <div class="d-flex align-items-center">
+                    <img height="20" src="Assets/UiElement.svg" alt="" />
+                    <p class="px-3 text-secondary" style="">UI Elements</p>
+                  </div>
+                  <div
+                    class="notify text-primary d-flex justify-content-center align-items-center font-weight-bold"
+                    style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                  >
+                    <img height="20" src="Assets/ArrowRight.svg" alt="" />
+                  </div>
+                </a>
+                <div class="collapse" id="uiElement">
+                  <ul class="list-unstyled pl-5">
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Button</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Cards</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Tabs</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Modals </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                class="p-3 px-4 d-flex justify-content-between align-items-center"
+                style="cursor: pointer"
+              >
+                <div class="d-flex align-items-center">
+                  <img height="20" src="Assets/Form.svg" alt="" />
+                  <p class="px-3 text-secondary">Forms</p>
+                </div>
+                <div
+                  class="notify bg-primary d-flex justify-content-center align-items-center text-light"
+                  style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                >
+                  8
+                </div>
+              </li>
+
+              <li class="p-3 px-4 d-flex text-secondary flex-column">
+                <a
+                  class="d-flex justify-content-between align-items-center"
+                  data-toggle="collapse"
+                  href="#chart"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <div class="d-flex align-items-center">
+                    <img height="20" src="Assets/Pie.svg" alt="" />
+                    <p class="px-3 text-secondary" style="">Charts</p>
+                  </div>
+                  <div
+                    class="notify d-flex justify-content-center align-items-center font-weight-bold"
+                    style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                  >
+                    <img height="20" src="Assets/ArrowRight.svg" alt="" />
+                  </div>
+                </a>
+                <div class="collapse" id="chart">
+                  <ul class="list-unstyled pl-5">
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Morris Chart</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Chartist Chart</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Chartjs Chart</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Flot Chart </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="p-3 px-4 d-flex text-secondary flex-column">
+                <a
+                  class="d-flex justify-content-between align-items-center"
+                  data-toggle="collapse"
+                  href="#icons"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <div class="d-flex align-items-center">
+                    <img height="20" src="Assets/Icons.svg" alt="" />
+                    <p class="px-3 text-secondary" style="">Icons</p>
+                  </div>
+                  <div
+                    class="notify d-flex justify-content-center align-items-center font-weight-bold"
+                    style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                  >
+                    <img height="20" src="Assets/ArrowRight.svg" alt="" />
+                  </div>
+                </a>
+                <div class="collapse" id="icons">
+                  <ul class="list-unstyled pl-5">
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Material Design</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Icon Icons</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Font Awesome</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Dripicons </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="p-3 px-4 d-flex text-secondary flex-column">
+                <a
+                  class="d-flex justify-content-between align-items-center"
+                  data-toggle="collapse"
+                  href="#tables"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <div class="d-flex align-items-center">
+                    <img height="20" src="Assets/Icons.svg" alt="" />
+                    <p class="px-3 text-secondary" style="">Table</p>
+                  </div>
+                  <div
+                    class="notify d-flex justify-content-center align-items-center font-weight-bold"
+                    style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                  >
+                    <img height="20" src="Assets/ArrowRight.svg" alt="" />
+                  </div>
+                </a>
+                <div class="collapse" id="tables">
+                  <ul class="list-unstyled pl-5">
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Basic Tables</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Data Tables</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Responsive Table</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Editable Table </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="extra">
+            <p class="text-secondary p-2 px-3">Extra</p>
+            <ul class="list-unstyled">
+              <li
+                class="p-3 px-4 d-flex justify-content-between align-items-center"
+                style="cursor: pointer"
+              >
+                <div class="d-flex align-items-center">
+                  <img height="20" src="Assets/Location.svg" alt="" />
+                  <p class="px-3 text-secondary">Maps</p>
+                </div>
+                <div
+                  class="notify d-flex justify-content-center align-items-center text-light"
+                  style="
+                    border-radius: 50%;
+                    height: 1.3rem;
+                    width: 1.3rem;
+                    background-color: red;
+                  "
+                >
+                  2
+                </div>
+              </li>
+
+              <li class="p-3 px-4 d-flex text-secondary flex-column">
+                <a
+                  class="d-flex justify-content-between align-items-center"
+                  data-toggle="collapse"
+                  href="#pages"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <div class="d-flex align-items-center">
+                    <img height="20" src="Assets/Pages.svg" alt="" />
+                    <p class="px-3 text-secondary" style="">Pages</p>
+                  </div>
+                  <div
+                    class="notify d-flex justify-content-center align-items-center font-weight-bold"
+                    style="border-radius: 50%; height: 1.3rem; width: 1.3rem"
+                  >
+                    <img height="20" src="Assets/ArrowRight.svg" alt="" />
+                  </div>
+                </a>
+                <div class="collapse" id="pages">
+                  <ul class="list-unstyled pl-5">
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Login</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Register</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Recover Password</a>
+                    </li>
+                    <li class="py-2">
+                      <a href="" class="text-secondary">Error 404 </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    
+      </aside>
+      <section
+        class="bg-light"
+        style="width: 80%; height: 100vh; overflow-y: scroll"
+      >
+        <nav
+          class="bg-primary p-3 py-3 align-items-center d-flex justify-content-between"
+        >
+          <form
+            class="form-inline rounded-pill"
+            style="background-color: #ffffff34; color: white"
+          >
+            <input
+              class="small px-3 bg-transparent border-0 text-light"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="outline: none"
+            />
+            <button class="btn my-2 my-sm-0" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="mx-3"
+                role="img"
+                viewBox="0 0 24 24"
+                color="#fff"
+              >
+                <title>Search</title>
+                <circle cx="10.5" cy="10.5" r="7.5" />
+                <path d="M21 21l-5.2-5.2" />
+              </svg>
+            </button>
+          </form>
+          <div class="d-flex text-light justify-content-end">
+            <a class="text-light d-flex align-items-center" href="#"
+              >English
+              <img
+                class="pl-2"
+                src="Assets/us_flag.jpg"
+                height="17"
+                alt="US Flag"
+            /></a>
 
-    <script src="JS/bootstrap.bundle.min.js"></script>
-</body>
+            <div
+              class="text-light align-items-center d-flex"
+              style="position: relative; cursor: pointer"
+            >
+              <img src="Assets/Email.svg" class="px-2" alt="" /><span
+                class="rounded-full d-flex justify-content-center align-items-center"
+                style="
+                  background-color: red;
+                  position: absolute;
+                  top: 0;
+                  right: 10%;
+                  border-radius: 50%;
+                  font-size: 0.5rem;
+                  height: 0.7rem;
+                  width: 0.7rem;
+                "
+                >4</span
+              >
+            </div>
+
+            <div
+              class="text-light align-items-center d-flex"
+              style="position: relative; cursor: pointer"
+            >
+              <img src="Assets/Bell.svg" class="px-2" alt="" /><span
+                class="rounded-full d-flex justify-content-center align-items-center"
+                style="
+                  background-color: rgb(45, 188, 45);
+                  position: absolute;
+                  top: 0;
+                  right: 10%;
+                  border-radius: 50%;
+                  font-size: 0.5rem;
+                  height: 0.7rem;
+                  width: 0.7rem;
+                "
+                >4</span
+              >
+            </div>
+
+            <div
+              class="text-light align-items-center d-flex"
+              style="
+                position: relative;
+                cursor: pointer;
+                padding: 0.1rem;
+                border: 1px;
+              "
+            >
+              <img
+                style="height: 2rem; border-radius: 50%"
+                src="Assets/User.jpg"
+                class="px-2"
+                alt=""
+              />
+            </div>
+          </div>
+        </nav>
+        <section class="px-3">
+          <section class="d-flex justify-content-between py-2">
+            <div class="font-weight-bold">Dashboard</div>
+            <div class="text-secondary">
+              <a href="" class="text-secondary">Annex </a>/
+              <a href="" class="text-secondary">Dashboard</a>
+            </div>
+          </section>
+          <section class="d-flex">
+            <div class="p-1">
+              <div
+                class="p-3 row justify-content-between border align-items-center"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  background: #ffffff;
+                "
+              >
+                <div class="px-3">
+                  <div
+                  class="d-flex justify-content-center align-items-center"
+                    style="
+                      background-color: rgba(149, 149, 238, 0.315);
+                      border-radius: 50%;
+                      padding: 1rem;
+                      height: 3rem;
+                      width: 3rem;
+                    "
+                  >
+                    <img width="40" src="Assets/webcam.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center px-3 text-center"
+                >
+                  <p class="font-weight-bold h4">$1200</p>
+                  <p class="text-secondary">Visit Today</p>
+                </div>
+                <div
+                  class="px-3 d-flex flex-column justify-content-center text-center align-items-center"
+                  style="color: red"
+                >
+                  <img width="20" src="Assets/DownArrow.svg" alt="" />
+                  <p>5.26%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-1">
+              <div
+                class="p-3 row justify-content-between border align-items-center"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  background: #ffffff;
+                "
+              >
+                <div class="px-3">
+                  <div
+                  class="d-flex justify-content-center align-items-center"
+                    style="
+                      background-color: rgba(149, 149, 238, 0.315);
+                      border-radius: 50%;
+                      padding: 1rem;
+                      height: 3rem;
+                      width: 3rem;
+                    "
+                  >
+                    <img style="" width="40" src="Assets/Users.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center px-3 text-center"
+                >
+                  <p class="font-weight-bold h4">562</p>
+                  <p class="text-secondary">New Users</p>
+                </div>
+                <div
+                  class="px-3 d-flex flex-column justify-content-center text-center align-items-center"
+                  style="color: rgb(17, 255, 0)"
+                >
+                  <img width="20" src="Assets/ArrowUp.svg" alt="" />
+                  <p>8.86%</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-1">
+              <div
+                class="p-3 row justify-content-between border align-items-center"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  background: #ffffff;
+                "
+              >
+                <div class="px-3">
+                  <div
+                  div
+                  class="d-flex justify-content-center align-items-center"
+                    style="
+                      background-color: rgba(149, 149, 238, 0.315);
+                      border-radius: 50%;
+                      padding: 1rem;
+                      height: 3rem;
+                      width: 3rem;
+                    "
+                  >
+                    <img width="40" src="Assets/Orders.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center px-3 text-center"
+                >
+                  <p class="font-weight-bold h4">7514</p>
+                  <p class="text-secondary">New Orders</p>
+                </div>
+                <div
+                  class="px-3 d-flex flex-column justify-content-center text-center align-items-center"
+                  style="color: red"
+                >
+                  <img width="20" src="Assets/DownArrow.svg" alt="" />
+                  <p>2.35%</p>
+                </div>
+              </div>
+            </div>
+            <div class="p-1">
+              <div
+                class="p-3 row justify-content-between border align-items-center"
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  background: #ffffff;
+                "
+              >
+                <div class="px-3">
+                  <div
+                  class="d-flex justify-content-center align-items-center"
+                    style="
+                      background-color: rgba(149, 149, 238, 0.447);
+                      border-radius: 50%;
+                      padding: 1rem;
+                      height: 3rem;
+                      width: 3rem;
+                    "
+    
+                  >
+                    <img width="40" src="Assets/Rocket.svg" alt="" />
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center px-3 text-center"
+                >
+                  <p class="font-weight-bold h4">$32874</p>
+                  <p class="text-secondary">Total Sales</p>
+                </div>
+                <div
+                  class="px-3 d-flex flex-column justify-content-center text-center align-items-center"
+                  style="color: green"
+                >
+                  <img width="20" src="Assets/ArrowUp.svg" alt="" />
+                  <p>2.35%</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="d-flex">
+            <div class="graph p-2" style="width: 70%">
+              <div class="p-3" style="background-color: #ffffff">
+                <p class="font-weight-bold">Overview</p>
+                <img style="width: 100%" src="Assets/GraphPng.png" alt="" />
+              </div>
+            </div>
+            <div class="pie p-2" style="width: 30%; height: 100%">
+              <div
+                class="d-flex flex-column"
+                style="gap: 1rem; background-color: #ffffff"
+              >
+                <div
+                  class="d-flex justify-content-between p-3 align-items-center"
+                >
+                  <div class="d-flex font-weight-bold">Revenue By Country</div>
+                  <div class="btn btn-primary p-1 px-2">More Info</div>
+                </div>
+                <img
+                  class="px-4 pb-3"
+                  height="100%"
+                  src="Assets/pie.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </section>
+
+          <section class="row">
+            <div class="social-cards col-4">
+              <div class="social py-2 pr-2">
+                <div
+                  class="mb-3 text-light p-4 d-flex flex-column"
+                  style="gap: 2rem; background-color: rgb(71, 181, 225)"
+                >
+                  <img height="40" src="Assets/Twitter.svg" alt="" />
+                  <div class="d-flex justify-content-around">
+                    <div class="text-center">
+                      <p class="h2 font-weight-bold text-light">54k</p>
+                      <p>Followers</p>
+                    </div>
+                    <div class="text-center">
+                      <p class="h2 font-weight-bold text-light">54k</p>
+                      <p>Followers</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-primary text-light p-4 d-flex flex-column"
+                  style="gap: 2rem"
+                >
+                  <img height="40" src="Assets/Facebook.svg" alt="" />
+                  <div class="d-flex justify-content-around">
+                    <div class="text-center">
+                      <p class="h2 font-weight-bold text-light">54k</p>
+                      <p>Followers</p>
+                    </div>
+                    <div class="text-center">
+                      <p class="h2 font-weight-bold text-light">54k</p>
+                      <p>Followers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 graph-wave py-2 px-2">
+              <div class="px-4 pt-4" style="background-color: #ffffff">
+                <div class="d-flex justify-content-around">
+                  <div class="text-center">
+                    <p
+                      class="h4 font-weight-bold d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        height="25"
+                        class="pr-2"
+                        src="Assets/Data.svg"
+                        alt=""
+                      />
+                      5 TB
+                    </p>
+                    <p class="font-weight-bold">Bandwidth usage</p>
+                    <p class="h6 text-secondary">June 2018</p>
+                  </div>
+                  <div class="text-center">
+                    <p
+                      class="h4 font-weight-bold d-flex align-items-center justify-content-center"
+                    >
+                      <img
+                        height="25"
+                        class="pr-2"
+                        src="Assets/download.svg"
+                        alt=""
+                      />
+                      5412
+                    </p>
+                    <p class="font-weight-bold">Download count</p>
+                    <p class="h6 text-secondary">June 2018</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img width="100%" src="Assets/Wave.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-4 weather py-2 px-2">
+              <div class="w-100">
+                <img class="w-100" src="Assets/fox.jpg" alt="" />
+              </div>
+              <div
+                class="p-4 bg-primary d-flex justify-content-around"
+                style="gap: 1rem"
+              >
+                <div class="text-light text-center">
+                  <img height="50" src="Assets/SunCloud.svg" alt="" />
+                  <p class="font-weight-bold h6">SUNDAY 25<sup>th</sup></p>
+                </div>
+                <div class="text-light text-center">
+                  <p class="font-weight-bold h4 pt-1">32<sup>O</sup></p>
+                  <p class="pt-1" style="font-size: 0.8rem">Partly cloudy</p>
+                  <p style="font-size: 1rem">15km/h - 37%</p>
+                </div>
+                <div class="text-light text-center">
+                  <p class="font-weight-bold h6 mb-2">MON</p>
+
+                  <img class="mb-2" height="40" src="Assets/Rain.svg" alt="" />
+                  <p class="font-weight-bold h6">38<sup>O</sup></p>
+                </div>
+                <div class="text-light text-center">
+                  <p class="font-weight-bold h6 mb-2">TUE</p>
+
+                  <img class="mb-2" height="40" src="Assets/Wave.svg" alt="" />
+                  <p class="font-weight-bold h6">32<sup>O</sup></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="row">
+            <div class="social-cards col-8 py-2 pr-1">
+              <div class="social p-4" style="background-color: #ffffff">
+                <p class="font-weight-bold">Overview</p>
+                <table class="w-100">
+                  <thead class="border-bottom">
+                    <tr class="">
+                      <th class="py-2">Member</th>
+                      <th class="py-2">Name</th>
+                      <th class="py-2">Country</th>
+                      <th class="py-2">Earnings</th>
+                      <th class="py-2">Sales</th>
+                      <th class="py-2">Reviews</th>
+                      <th class="py-2">Progress</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-bottom">
+                      <td class="py-2">
+                        <img
+                          height="40"
+                          style="border-radius: 50%"
+                          src="Assets/avatar-2.jpg"
+                          alt=""
+                        />
+                      </td>
+                      <td class="py-2">
+                        <a class="text-primary" href="">Ruby T. Curd</a>
+                      </td>
+                      <td class="py-2">
+                        <img height="20" src="Assets/us_flag.jpg" alt="" />
+                      </td>
+                      <td class="py-2">$100</td>
+                      <td class="py-2">10</td>
+                      <td class="py-2">
+                        <div class="reviews d-flex">
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td class="py-2">
+                        <div class="progress" style="height: 0.7rem">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 80%; background-color: blue"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td class="py-2">
+                        <img
+                          height="40"
+                          style="border-radius: 50%"
+                          src="Assets/avatar-3.jpg"
+                          alt=""
+                        />
+                      </td>
+                      <td class="py-2">
+                        <a class="text-primary" href="">William A. Johnson</a>
+                      </td>
+                      <td class="py-2">
+                        <img height="20" src="Assets/french_flag.jpg" alt="" />
+                      </td>
+                      <td class="py-2">$490</td>
+                      <td class="py-2">24</td>
+                      <td class="py-2">
+                        <div class="reviews d-flex">
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td class="py-2">
+                        <div class="progress" style="height: 0.7rem">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 30%; background-color: green"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td class="py-2">
+                        <img
+                          height="40"
+                          style="border-radius: 50%"
+                          src="Assets/avatar-4.jpg"
+                          alt=""
+                        />
+                      </td>
+                      <td class="py-2">
+                        <a class="text-primary" href="">Bobby M. Gray</a>
+                      </td>
+                      <td class="py-2">
+                        <img height="20" src="Assets/spain_flag.jpg" alt="" />
+                      </td>
+                      <td class="py-2">$380</td>
+                      <td class="py-2">19</td>
+                      <td class="py-2">
+                        <div class="reviews d-flex">
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td class="py-2">
+                        <div class="progress" style="height: 0.7rem">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 70%; background-color: black"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td class="py-2">
+                        <img
+                          height="40"
+                          style="border-radius: 50%"
+                          src="Assets/avatar-5.jpg"
+                          alt=""
+                        />
+                      </td>
+                      <td class="py-2">
+                        <a class="text-primary" href="">Robert N. Carlile</a>
+                      </td>
+                      <td class="py-2">
+                        <img height="20" src="Assets/russia_flag.jpg" alt="" />
+                      </td>
+                      <td class="py-2">$450</td>
+                      <td class="py-2">30</td>
+                      <td class="py-2">
+                        <div class="reviews d-flex">
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td class="py-2">
+                        <div class="progress" style="height: 0.7rem">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 90%; background-color: red"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="border-bottom">
+                      <td class="py-2">
+                        <img
+                          height="40"
+                          style="border-radius: 50%"
+                          src="Assets/avatar-6.jpg"
+                          alt=""
+                        />
+                      </td>
+                      <td class="py-2">
+                        <a class="text-primary" href="">Ruby T. Curd</a>
+                      </td>
+                      <td class="py-2">
+                        <img height="20" src="Assets/italy_flag.jpg" alt="" />
+                      </td>
+                      <td class="py-2">$500</td>
+                      <td class="py-2">40</td>
+                      <td class="py-2">
+                        <div class="reviews d-flex">
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                          <img
+                            height="15"
+                            class="pr-1"
+                            src="Assets/star.svg"
+                            alt=""
+                          />
+                        </div>
+                      </td>
+                      <td class="py-2">
+                        <div class="progress" style="height: 0.7rem">
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            style="width: 10%; background-color: purple"
+                            aria-valuenow="25"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-4 graph-wave py-2 px-2">
+              <div class="px-4 py-4" style="background-color: #ffffff">
+                <p class="font-weight-bold">New Users</p>
+                <div
+                  class="User-table"
+                  style="
+                    overflow-y: scroll;
+                    height: 21.5rem;
+                    scrollbar-color: gray transparent;
+
+                    scrollbar-width: thin;
+                  "
+                >
+                  <table class="w-100">
+                    <tbody>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/avatar-5.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">Ruby T. Curd</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            Newyork
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: green; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">Now</p>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/avatar-4.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">William A. Johnson</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            California
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: green; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">Now</p>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/avatar-3.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">Robert N. Carlile</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            India
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: red; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">10 Min ago</p>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/avatar-2.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">Bobby M. Gray</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            Australia
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: green; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">Now</p>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/User.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">Ruby T. Curd</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            New Zealand
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: red; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">36 min ago</p>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/avatar-6.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">Robert N. Carlile</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            India
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: green; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">Now</p>
+                        </td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <td class="py-3">
+                          <img
+                            height="40"
+                            style="border-radius: 50%"
+                            src="Assets/avatar-4.jpg"
+                            alt=""
+                          />
+                        </td>
+                        <td class="py-3">
+                          <p class="h6">Bobby M. Gray</p>
+                          <p class="text-secondary" style="font-size: 0.7rem">
+                            India
+                          </p>
+                        </td>
+                        <td
+                          class="py-3 d-flex flex-column align-items-center justify-content-center"
+                        >
+                          <div
+                            class="p-1 m-1 mt-2"
+                            style="background-color: red; border-radius: 50%"
+                          ></div>
+                          <p style="font-size: 0.7rem">58 min ago</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer
+            class="text-center p-4"
+            style="background-color: rgb(239, 238, 238)"
+          >
+            @ 2025 Annex by Nitin Kumawat
+          </footer>
+        </section>
+      </section>
+    </section>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
